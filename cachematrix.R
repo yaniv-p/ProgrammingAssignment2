@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Below two functions that are used to create a special object that stores a Matrix and cache's its inverese
+
 
 ## The makeCacheMatrix function creates R object.
 ## The R object is composed from a data set(Matrix) initialy passed as an argument(x) and a value connected to that matrix (ans)
