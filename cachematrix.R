@@ -2,10 +2,10 @@
 
 
 ## The makeCacheMatrix function creates R object.
-## The R object is composed from a data set(Matrix) initialy passed as an argument(x) and a value connected to that matrix (ans)
+## The R object is composed from a data set(Matrix) initialy passed as an argument(x) and a value connected to that matrix (called 'ans' in the function)
 ## The R object also contains a list of 4 elemenets that are two pairs of Set/Get functions.
-## One pair of functions to set/get the value of the Matrix ('Set' and 'Get')
-## Another pair to set/get the value connected to the Matrix.
+## One pair of functions to set/get the value of the Matrix ('set' and 'get')
+## Another pair to set/get the value connected to the Matrix.('setsolve' and 'getsolve')
 
 makeCacheMatrix <- function(x = matrix()) {
         ans <- NULL
@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## calculates the inverse of a square matrix value that is passed within a R object created by the makeCacheMatrix function.
-##It first checks to see if the mean has already been calculated. If so, it gets the mean from the cache and skips the computation. Otherwise, it calculates the mean of the data and sets the value of the mean in the cache via the setmean function.
+## It first checks to see if the inverse has already been calculated. If so, it gets the inverse from the cache and skips the computation. Otherwise, it calculates the inverse of the data and sets the value of the inverse in the cache via the setsolve function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
